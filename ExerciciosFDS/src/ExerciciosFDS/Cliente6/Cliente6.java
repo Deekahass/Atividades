@@ -1,6 +1,6 @@
 package ExerciciosFDS.Cliente6;
 
-public class Cliente6 {
+public abstract class Cliente6 {
 	
 	private String nome;
 	private String RG;
@@ -69,15 +69,11 @@ public class Cliente6 {
 		
 	}
 
-	public void visualizar() {
-		
-		String tipo = "";
-		
-		switch(this.tipo) {
-		
-		case 1 -> tipo = "Pessoa Física";
-		case 2 -> tipo = "Pessoa júridica";
-			
+	 public void visualizar() {
+	    String tipo = "";
+	    switch (this.tipo){
+	      case 1 -> System.out.println("Pessoa Física");
+	      case 2 -> System.out.println("Pessoa Juridica");
 		}
 		
 		

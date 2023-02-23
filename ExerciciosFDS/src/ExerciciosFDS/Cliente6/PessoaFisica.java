@@ -23,7 +23,7 @@ public class PessoaFisica extends Cliente6 {
 	}
     
 	public void visualizar() {
-	 super.visualizar();
-
+        super.visualizar();
+        System.out.println(" , " + cpf);
 	}
 }
